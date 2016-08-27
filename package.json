@@ -1,0 +1,26 @@
+{
+  "name": "ffuncs",
+  "version": "1.0.0",
+  "description": "a small functional library",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConorOBrien-Foxx/ffuncs.git"
+  },
+  "keywords": [
+    "functional",
+    "vectorized",
+    "library",
+    "extension",
+    "memoize"
+  ],
+  "author": "Conor O'Brien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConorOBrien-Foxx/ffuncs/issues"
+  },
+  "homepage": "https://github.com/ConorOBrien-Foxx/ffuncs#readme"
+}
