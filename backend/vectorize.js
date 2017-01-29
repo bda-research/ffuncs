@@ -7,21 +7,23 @@ const error = require("./error.js");
 
 const vectorize = (f, arity = f.length) => {
     if(arity === 2){
-        return (x, y) =>
+        let trav = (x, y) =>
             Array.isArray(x) ?
                 Array.isArray(y) ?
                     x.length === y.length ?
-                        x.map((e, i) => f(e, y[i]))
+                        x.map((e, i) => vectorize(e, y[i]))
                     : error("arguments are of different lengths")
-                : x.map(e => f(e, y))
+                : x.map(e => trav(e, y))
             : Array.isArray(y) ?
-                y.map(e => f(x, e))
+                y.map(e => trav(x, e))
             : f(x, y);
+        return trav;
     } else if(arity === 1) {
-        return (x) =>
+        let trav = (x) =>
             Array.isArray(x) ?
                 x.map(f)
             : f(x);
+        return trav;
     } else {
         error("unsupported arity " + arity);
     }
