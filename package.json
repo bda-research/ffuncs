@@ -1,14 +1,15 @@
 {
   "name": "ffuncs",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "a small functional library",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "hint": "eslint lib/*.js",
+    "test": "mocha test/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConorOBrien-Foxx/ffuncs.git"
+    "url": "git+https://github.com/bda-research/ffuncs.git"
   },
   "keywords": [
     "functional",
@@ -17,10 +18,17 @@
     "extension",
     "memoize"
   ],
-  "author": "Conor O'Brien",
+  "author": "Conor O'Brien, Mike Chen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ConorOBrien-Foxx/ffuncs/issues"
+    "url": "https://github.com/bda-research/ffuncs/issues"
   },
-  "homepage": "https://github.com/ConorOBrien-Foxx/ffuncs#readme"
+  "homepage": "https://github.com/bda-research/ffuncs",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
 }

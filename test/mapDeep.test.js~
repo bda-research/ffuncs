@@ -1,0 +1,20 @@
+
+'use strict';
+
+const expect = require('chai').expect;
+const {mapDeep} = require('../lib/mapDeep.js');
+
+describe('mapDeep', () => {
+	it('should map functors', ()=>{
+		const plusOne = mapDeep(1,(n)=>n+1);
+		expect(plusOne([1,2,3])).to.eql([2,3,4]);
+	});
+	
+	it('should map n levels', () => {
+		
+	});
+	
+	it('should recursively map', () => {
+		
+	});
+});
