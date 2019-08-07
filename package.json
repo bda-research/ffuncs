@@ -1,34 +1,34 @@
 {
-  "name": "ffuncs",
-  "version": "2.0.0",
-  "description": "a small functional library",
-  "main": "index.js",
-  "scripts": {
-    "hint": "eslint lib/*.js",
-    "test": "mocha test/*.test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bda-research/ffuncs.git"
-  },
-  "keywords": [
-    "functional",
-    "vectorized",
-    "library",
-    "extension",
-    "memoize"
-  ],
-  "author": "Conor O'Brien, Mike Chen",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bda-research/ffuncs/issues"
-  },
-  "homepage": "https://github.com/bda-research/ffuncs",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4"
-  },
-  "dependencies": {
-    "ramda": "^0.26.1"
-  }
+	"name": "ffuncs",
+	"version": "2.0.0",
+	"description": "a functional library based on ramda",
+	"main": "index.js",
+	"scripts": {
+		"hint": "eslint lib/*.js",
+		"test": "mocha test/*.test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bda-research/ffuncs.git"
+	},
+	"keywords": [
+		"functional",
+		"function",
+		"ramda",
+		"library",
+		"extension"
+	],
+	"author": "Conor O'Brien, Mike Chen",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/bda-research/ffuncs/issues"
+	},
+	"homepage": "https://github.com/bda-research/ffuncs",
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"mocha": "^6.1.4"
+	},
+	"dependencies": {
+		"ramda": "^0.26.1"
+	}
 }
