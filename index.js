@@ -11,4 +11,5 @@ module.exports = {
 	mapDeep: require('./lib/mapDeep.js'),
 	renameKeys: require('./lib/renameKeys.js'),
 	statGroupBy: require('./lib/statGroupBy.js'),
+	overKey: require('./lib/overKey.js'),
 };

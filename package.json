@@ -1,6 +1,6 @@
 {
 	"name": "ffuncs",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "a functional library based on ramda",
 	"main": "index.js",
 	"scripts": {
