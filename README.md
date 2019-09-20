@@ -1,5 +1,5 @@
 # ffuncs
-A small functional library for JavaScript.
+A small functional library for JavaScript which is an enhancement of ramda.
 
 ## Contents
 
