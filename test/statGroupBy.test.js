@@ -10,10 +10,10 @@ describe('statGroupBy', () => {
 	it('should have same statistic result ', () => {
 		const grouped = statGroupBy(R.prop('finalPrice'),[R.prop('category')], R.T, R.mean, items);
 		
-		for(const groupKey of Object.keys(grouped)){
+		for(const groupKey of Object.keys(grouped.valueObject)){
 			const priceOfOneCategoryItems = items.filter(item => item.category === groupKey).map(item => item.finalPrice);
 			
-			expect(grouped[groupKey]).to.be.eql(R.mean(priceOfOneCategoryItems));
+			expect(grouped.valueObject[groupKey]).to.be.eql(R.mean(priceOfOneCategoryItems));
 		}
 	});
 
@@ -27,7 +27,7 @@ describe('statGroupBy', () => {
 			  .filter(item => item.category === category && item.quarter === quarter)
 			  .map(item => item.finalPrice);
 		
-		expect(grouped[category][quarter]).to.be.eql(R.mean(priceListOfItems));
+		expect(grouped.valueObject[category][quarter]).to.be.eql(R.mean(priceListOfItems));
 	});
 });
 
