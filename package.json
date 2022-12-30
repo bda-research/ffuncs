@@ -26,7 +26,7 @@
 	"homepage": "https://github.com/bda-research/ffuncs",
 	"devDependencies": {
 		"chai": "^4.2.0",
-		"mocha": "^6.1.4"
+		"mocha": "^10.2.0"
 	},
 	"dependencies": {
 		"ramda": "^0.26.1"
